@@ -1,0 +1,22 @@
+.moving
+{
+    background-color:rgb(170, 237, 237);
+    font-style: italic;
+    font-size: 30px;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+body{
+    background-color: aqua;
+}
+a
+{
+    text-decoration: none;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1
+{
+    text-align: right; 
+     color: blue;
+}

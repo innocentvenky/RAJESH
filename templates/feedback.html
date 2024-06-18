@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/feedbackdesign.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="moving">
+        <marquee behavior="" direction="">Jai Hanuman Aqua Solutions - Bengaluru &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            " The Ultimate Solution for Pure Water, where Water Meets Wellness! Our shop is a sanctuary of purity, offers cutting-edge water purification solutions "</marquee>
+    </div>
+   <a href="/">Back</a>
+    <form action="" method="post">
+        <h1>FeedBack</h1>
+        <h1>Name  {{form.Name}}</h1>
+       <h1>feedback {{form.feedback}}</h1>
+        {% csrf_token %}
+        <h1><input type="submit" value="SAVE"></h1>
+        <br>
+    </form>
+    {% for data in data %}
+    <h2>" {{data.Name}} ":&nbsp;{{data.feedback}}</h2>
+    {% endfor %}
+    
+</body>
+</html>

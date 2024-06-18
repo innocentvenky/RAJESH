@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/servicedesign.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+</head>
+<body>
+    <div class="moving">
+        <marquee behavior="" direction="">Jai Hanuman Aqua Solutions - Bengaluru &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            " The Ultimate Solution for Pure Water, where Water Meets Wellness! Our shop is a sanctuary of purity, offers cutting-edge water purification solutions "</marquee>
+    </div>
+    <h1>Details for Service</h1>
+    <div class="input">
+        
+        <form action="" method="post">
+           <p>Name  {{form.Name}}</p>
+           <p>Phone {{form.Phone}}</p>
+            <p>Address {{form.Address}}</p>
+            <p>Problem  {{form.Problem}}</p>
+            <p>Model  {{form.Model}}</p>
+        <input type="submit" value="SAVE">
+        {% csrf_token %}
+        </form>
+    </div>
+</body>
+</html>

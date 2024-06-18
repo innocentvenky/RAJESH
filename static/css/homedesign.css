@@ -1,0 +1,39 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;   
+    background-attachment: fixed;    
+}
+.moving
+{
+    background-color:azure;
+    font-style: italic;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+button{
+  color: aqua;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 50px;
+  margin: 80px 80px ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.booking
+{
+    text-align: right;
+}
+.feedback
+{
+    text-align: right;
+}
